@@ -13,13 +13,15 @@ int main() {
     int opcion, cantidad, total_unidades = 0;
     float total_general = 0;
 
-    do {
-        // Mostrar menú de alimentos
+    // Mostrar menú de alimentos
         printf("\nMenu de alimentos:\n");
         for (int i = 0; i < MAX_ALIMENTOS; i++) {
             printf("%d. %s - $%.2f\n", i + 1, alimentos[i], precios[i]);
         }
         printf("5. salir");
+
+    do {
+        
         
         // Solicitar selección de alimento
         printf("\nSeleccione alguna opcion que desea pedir: ");
